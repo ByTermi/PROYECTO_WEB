@@ -27,3 +27,14 @@ h1{
     width: fit-content;
     height: fit-content;
 }
+nav, menu{
+    width: 100%;
+}
+menu{
+    display: flex;
+    
+}
+menu>li{
+    list-style: none;
+    display: inline-block;
+}
