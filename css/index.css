@@ -45,3 +45,27 @@ menu>li{
     list-style: none;
     display: inline-block;
 }
+
+#fondoPdf, #objectPdf{
+    position: absolute;
+    margin: auto;
+    
+}
+
+#fondoPdf{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    visibility: show;
+    top: 0;
+    left: 0;
+}
+
+#objectPdf{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    z-index: 2;
+    top: 50px;
+    margin: auto;
+}
