@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
 }
 body{
     width: 100vw;
@@ -12,9 +18,10 @@ header{
 }
 header *{
     margin: auto;
+    text-align: center;
 }
-header > img {
-    width: 15%;
+header > picture {
+    width: auto;
     height: auto; /* Cambia 'inherit' a 'auto' para mantener la proporción */
     object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor sin perder su proporción */
     display: block; /* Necesario para que funcione margin: auto */
