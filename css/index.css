@@ -3,9 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
-header>img{
-    width: 20%;
+body{
+    width: 100vw;
 }
+header{
+    width: 100%;
+    height: fit-content;
+}
+header *{
+    margin: auto;
+}
+header > img {
+    width: 15%;
+    height: auto; /* Cambia 'inherit' a 'auto' para mantener la proporción */
+    object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor sin perder su proporción */
+    display: block; /* Necesario para que funcione margin: auto */
+    margin: auto; /* Centra la imagen */
+}
+
 h1{
     /*display: inline-block;*/
+    font-size: 1.75rem;
+    width: fit-content;
+    height: fit-content;
 }
