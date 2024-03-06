@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -45,7 +43,39 @@ menu>li{
     list-style: none;
     display: inline-block;
 }
+article{
+    width: 100%;
+}
+article *{
+    text-align: center;
+}
+#logoB{
+    width: 85px;
+    height: auto;
+}
+#contact{
+    width: 100%;
+}
+.card_cont{
+    width: 40%;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 1rem;
+    padding: 1.2rem;
+    border-radius: ;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
 
+#telefono{
+    width: 10%;
+}
+article>h2{
+    display: block;
+}
+/*
 #fondoPdf, #objectPdf{
     position: absolute;
     margin: auto;
@@ -69,3 +99,4 @@ menu>li{
     top: 50px;
     margin: auto;
 }
+*/
