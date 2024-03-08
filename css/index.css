@@ -32,6 +32,12 @@ h1{
     width: fit-content;
     height: fit-content;
 }
+p, a{
+    font-size: calc(1.2vw + .5rem);
+}
+h2{
+    font-size: calc(1vw + 1rem);
+}
 nav, menu{
     width: 100%;
 }
@@ -51,7 +57,7 @@ article *{
 }
 #logoB{
     width: 85px;
-    height: auto;
+    height: 85px;
 }
 #contact{
     width: 100%;
@@ -62,19 +68,31 @@ article *{
     display: inline-block;
     margin: 1rem;
     padding: 1.2rem;
-    border-radius: ;
+    /*border-radius: ;*/
+}
+.card_cont *{
+    display: block;
+    text-align: center;
+}
+.card_cont a{
+    margin-top: 1rem;
 }
 .flex{
     display: flex;
     justify-content: space-around;
 }
 
-#telefono{
-    width: 10%;
+.svgs{
+    width: 15%;
+    height: auto; /* Cambia 'inherit' a 'auto' para mantener la proporción */
+    object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor sin perder su proporción */
+
+    margin: auto;
 }
 article>h2{
     display: block;
 }
+
 /*
 #fondoPdf, #objectPdf{
     position: absolute;
