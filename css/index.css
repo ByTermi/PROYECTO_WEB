@@ -109,6 +109,10 @@ article *{
 article>h2{
     display: block;
 }
+figcaption>a{
+    text-decoration: none;
+    color: gainsboro;
+}
 /*
     Añadir flex para titulo
 */
