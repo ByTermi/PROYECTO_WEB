@@ -11,6 +11,7 @@
 body{
     width: 100%;
 }
+
 main>*:nth-child(2n){
     background-color: #BF9270;
 }
@@ -41,7 +42,7 @@ header > picture {
     margin: auto; /* Centra la imagen */
 }
 main>article, section{
-    padding: .3rem 0;
+    padding: .5rem 0;
 }
 h1{
     /*display: inline-block;*/
@@ -95,7 +96,7 @@ article *{
     flex-direction: column;
     align-items: center;
     margin: 1rem;
-    padding: 1.2rem;
+    padding: 1.3rem;
     border-radius: 2rem;
     background-color: #EDCDBB;
     /*border-radius: ;*/
@@ -136,6 +137,12 @@ footer{
 }
 footer>*{
     margin: .5rem;
+}
+address a{
+    display: block;
+}
+#loc>p{
+    text-align: center;
 }
 /*
     Añadir flex para titulo
