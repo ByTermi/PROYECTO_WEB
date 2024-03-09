@@ -14,18 +14,18 @@ body{
 }
 
 main>*:nth-child(2n){
-    background-color: #BF9270;
+    background-color: #ffffff;
 }
 main>*:nth-child(2n+1){
-    background-color: #E3B7A0;
+    background-color: #ea4c00;
 }
 menu{
-    background-color: red;
+    
 }
 header{
     width: 100%;
     height: fit-content;
-    background-color: #FFEDDB;
+    
 }
 header *{
     margin: auto;

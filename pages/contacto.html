@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Localización</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/formulario.css">
     <meta name="description" content="Transportes Y Hormigones Carnicero es una empresa de hormigones con servicios de transporte de materiales de construcción y fabricancion y distribución de hormigón">
     <link rel="shortcut icon" href="../images/Logo_Transportes_y_Hormigones_Carnicero.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,18 +28,40 @@
             </menu>
         </nav>
     </header>
+
     <main>
-        <h2>Localización</h2>
-        <section id="loc">
-            <h3>Nuestra dirección</h3>
-            <p>Ronda Villacañas, 35, Tembleque, Toledo, España</p>
-            <div class="flex">
-                <iframe title="Vista maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.0752456311266!2d-3.512239623495644!3d39.693012099368396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd69eeb06d363a91%3A0xd90f156e1603f0e0!2sRda.%20Villaca%C3%B1as%2C%2044%2C%2045780%20Tembleque%2C%20Toledo%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sus!4v1710000632869!5m2!1ses!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <iframe title="Vista street" src="https://www.google.com/maps/embed?pb=!4v1709999962018!6m8!1m7!1sVDC21IoRMkc9lK50hE4T2g!2m2!1d39.69299795368638!2d-3.509838559570327!3f217.51!4f-1.0999999999999943!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
-        
+        <h2>Contacto</h2>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Formulario de contacto</legend>
+                <div class="flex_form">
+                    <div>
+                        <p>Nombre</p>
+                        <input required type="text" name="nombre" id="nombre">
+                    </div>
+                    <div>
+                        <p>Apellidos</p>
+                        <input required type="text" name="apellidos" id="apellidos">
+                    </div>
+                </div>
+                <div class="flex_form">
+                    <div>
+                        <p>Correo</p>
+                        <input required type="email" name="correo" id="correo">
+                    </div>
+                    <div>
+                        <p>Empresa</p>
+                        <input type="text" name="empresa" id="empresa">
+                    </div>
+                </div>
+                <p>URL de la web</p>
+                <input type="url" name="urlWeb" id="url">
+                <p>Descripción</p>
+                <textarea name="descripcion" id="descripcion" cols="50" rows="10"></textarea>
+            </fieldset>
+        </form>
     </main>
+
     <footer class="flex">
         <address>
             <p><strong>Dirección:</strong></p>
