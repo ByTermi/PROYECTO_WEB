@@ -10,6 +10,7 @@
 }
 body{
     width: 100%;
+    min-height: 100vh;
 }
 
 main>*:nth-child(2n){
@@ -49,6 +50,11 @@ h1{
     font-size: calc(1vw + .9rem);
     width: fit-content;
     height: fit-content;
+    margin: 1.2rem auto;
+}
+article:nth-child(1) p{
+    margin: 1.8rem;
+    text-align: justify;
 }
 p, a, footer *{
     font-size: calc(1.2vw + .5rem);
@@ -73,6 +79,7 @@ menu{
 menu>li{
     list-style: none;
     display: inline-block;
+    padding: 0.5rem;
 }
 article{
     width: 100%;
@@ -90,7 +97,7 @@ article *{
     /*background-color: #fff3df;*/
 }
 .card_cont{
-    width: 40%;
+    width: 25%;
     border: 1px solid black;
     display: inline-flex;
     flex-direction: column;
@@ -123,7 +130,11 @@ article *{
     height: auto; /* Cambia 'inherit' a 'auto' para mantener la proporción */
     object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor sin perder su proporción */
     margin: auto;
-    
+}
+iframe{
+    width: 40%;
+    height: 20rem; /* Cambia 'inherit' a 'auto' para mantener la proporción */
+    margin: 2rem;
 }
 article>h2{
     display: block;
@@ -137,33 +148,41 @@ footer{
 }
 footer>*{
     margin: .5rem;
+    
 }
 address a{
     display: block;
 }
+address *{
+    text-align: center;
+}
 #loc>p{
     text-align: center;
 }
-/*
-    Añadir flex para titulo
-*/
+
 /*
     Vista de movil
 */
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1130px){
     #contenedorCards{
         flex-direction: column;
         align-items: center;
     }
+    #contenedorCards article{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 600px) {
+    
     .flex{
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
-    #contenedorCards article{
-        flex: 1;
-    }
+    
     .card_cont{
+        width: 80%;
+    }
+    iframe{
         width: 80%;
     }
 }
@@ -173,6 +192,7 @@ address a{
         width: 80%;
     }
 }
+
 
 
 
