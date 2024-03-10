@@ -166,6 +166,7 @@ figcaption>a{
 }
 footer{
     background-color: gray;
+    padding: 2rem;
 }
 footer>*{
     margin: .5rem;
