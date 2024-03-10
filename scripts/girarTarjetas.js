@@ -1,1 +1,0 @@
-let cards = document.getElementsByClassName('cardBox');
