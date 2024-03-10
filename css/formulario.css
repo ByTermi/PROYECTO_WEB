@@ -1,8 +1,28 @@
 form{
     width: 70%;
     height: fit-content;
-    margin: auto;
+    margin: 2rem auto;
 }
 fieldset{
-    padding: 10%;
+    padding: 2rem 10%;
+}
+fieldset>div, fieldset>p{
+    margin: 1rem 0;
+}
+
+[type="reset"]{
+    display: block;
+}
+.flex_form{
+    display: flex;
+    justify-content: space-around;
+}
+.flex_form>div{
+    display: inline-block;
+}
+
+
+[type="url"]{
+    display: block;
+    width: 80%;
 }

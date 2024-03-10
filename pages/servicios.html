@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localización</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/servicios.css">
+    <meta name="description" content="Transportes Y Hormigones Carnicero es una empresa de hormigones con servicios de transporte de materiales de construcción y fabricancion y distribución de hormigón">
+    <link rel="shortcut icon" href="../images/Logo_Transportes_y_Hormigones_Carnicero.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+</head>
+<body>
+    <header>
+        <picture>
+            <source srcset="../images/Logo_Transportes_y_Hormigones_Carnicero406.webp" media="(min-width: 600px)">
+            <img src="../images/Logo_Transportes_y_Hormigones_Carnicero251.webp" alt="Logo Transportes y Hormigones Carnicero">
+        </picture>
+        
+        <h1>Transportes y Hormigones Carnicero</h1>
+        <nav>
+            <menu>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./localizacion.html">Localización</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </menu>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Servicios de Transportes y Hormigones Carnicero</h2>
+        <div class="flipCard" onmouseover="flipCardMouseOver(this)">
+            <div class="flipCardInterior">
+                <div class="flipCardFrontal">
+                    <h2>¡Pon el ratón sobre mí!</h2>
+                </div>
+                <div class="flipCardPosterior">
+                    <p>Contenido adicional aquí</p>
+                </div>
+            </div>
+        </div>
+        <!-- Reproductor de sonido -->
+        <audio id="myAudio">
+            <source src="mi-sonido.mp3" type="audio/mpeg">
+        </audio>
+        <script src="../scripts/sonido.js"></script>
+    </main>
+
+    <footer class="flex">
+        <address>
+            <p><strong>Dirección:</strong></p>
+            <p>Ronda Villacañas, 35</p>
+            <p>45780 Tembleque</p>
+            <p>Toledo</p>
+            <p>España</p>
+        </address>
+        <address>
+            <strong>Telefonos de contacto:</strong><br>
+            <a href="tel:+34677612470">+34 677612470</a>
+            <a href="tel:+34678514198">+34 678514198</a>
+        </address>
+    </footer>
+</body>
+</html>

@@ -9,7 +9,7 @@
     <meta name="description" content="Transportes Y Hormigones Carnicero es una empresa de hormigones con servicios de transporte de materiales de construcción y fabricancion y distribución de hormigón">
     <link rel="shortcut icon" href="../images/Logo_Transportes_y_Hormigones_Carnicero.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <script src="../scripts/form.js" defer></script>
 </head>
 <body>
     <header>
@@ -31,7 +31,7 @@
 
     <main>
         <h2>Contacto</h2>
-        <form action="" method="post">
+        <form action="mailto:pruebajesus@proton.me" method="post">
             <fieldset>
                 <legend>Formulario de contacto</legend>
                 <div class="flex_form">
@@ -47,7 +47,7 @@
                 <div class="flex_form">
                     <div>
                         <p>Correo</p>
-                        <input required type="email" name="correo" id="correo">
+                        <input required type="email" placeholder="ejemplo@ejemplo.es" maxlength="256" name="correo" id="correo">
                     </div>
                     <div>
                         <p>Empresa</p>
@@ -55,11 +55,16 @@
                     </div>
                 </div>
                 <p>URL de la web</p>
-                <input type="url" name="urlWeb" id="url">
+                <input type="url" placeholder="http://ejemplo.es" name="urlWeb" id="url">
+                <p>Asunto</p>
+                <input type="text" name="asunto" id="asunto">
                 <p>Descripción</p>
-                <textarea name="descripcion" id="descripcion" cols="50" rows="10"></textarea>
+                <textarea required name="descripcion" id="descripcion" cols="50" rows="10"></textarea>
+                <input type="reset" value="Borrar formulario">
+                <input type="submit" value="Enviar">
             </fieldset>
         </form>
+        
     </main>
 
     <footer class="flex">
