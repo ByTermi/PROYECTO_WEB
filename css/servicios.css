@@ -1,44 +1,68 @@
-/* El contenedor de la tarjeta giratoria */
-.flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Elimina esto si no deseas el efecto 3D */
-}
-
-/* Este contenedor es necesario para posicionar la parte frontal y trasera */
-.flip-card-inner {
-    position: relative;
+/* Estilos generales para las tarjetas */
+.boxesContainer {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .cardBox {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .card {
     width: 100%;
     height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
     transform-style: preserve-3d;
-}
-
-/* Realiza una rotación horizontal cuando muevas el ratón sobre el contenedor de la tarjeta */
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-/* Posiciona la parte frontal y trasera */
-.flip-card-front, .flip-card-back {
+    transition: transform 0.5s;
+  }
+  
+  /* Cara frontal de la tarjeta */
+  .front {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; /* Oculta la parte trasera */
-}
-
-/* Estilo de la parte frontal (usado si la imagen está ausente) */
-.flip-card-front {
-    background-color: #bbb;
-    color: black;
-}
-
-/* Estilo de la parte trasera */
-.flip-card-back {
-    background-color: dodgerblue;
-    color: white;
+    backface-visibility: hidden;
+  }
+  
+  /* Cara trasera de la tarjeta */
+  .back {
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
     transform: rotateY(180deg);
-}
+  }
+  
+  /* Efecto de giro al pasar el cursor */
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+  
+  /* Estilos para los contenidos dentro de las caras */
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  

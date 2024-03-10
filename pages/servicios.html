@@ -31,21 +31,27 @@
 
     <main>
         <h2>Servicios de Transportes y Hormigones Carnicero</h2>
-        <div class="flipCard" onmouseover="flipCardMouseOver(this)">
-            <div class="flipCardInterior">
-                <div class="flipCardFrontal">
-                    <h2>¡Pon el ratón sobre mí!</h2>
+        <div class="boxesContainer">
+            <div class="cardBox">
+              <div class="card">
+                <div class="front">
+                  <!-- Contenido de la cara frontal de la primera tarjeta -->
+                  <h3>Primera Tarjeta</h3>
+                  <p>Pasa el cursor para girar</p>
+                  <strong>↻</strong>
                 </div>
-                <div class="flipCardPosterior">
-                    <p>Contenido adicional aquí</p>
+                <div class="back">
+                  <!-- Contenido de la cara trasera de la primera tarjeta -->
+                  <h3>Lado Trasero Uno</h3>
+                  <p>Contenido en la primera tarjeta</p>
+                  <a href="#">Botón 1</a>
                 </div>
+              </div>
             </div>
-        </div>
-        <!-- Reproductor de sonido -->
-        <audio id="myAudio">
-            <source src="mi-sonido.mp3" type="audio/mpeg">
-        </audio>
-        <script src="../scripts/sonido.js"></script>
+            <!-- Repite el mismo patrón para las otras dos tarjetas -->
+            <!-- ... -->
+          </div>
+          
     </main>
 
     <footer class="flex">
