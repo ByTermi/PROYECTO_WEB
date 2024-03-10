@@ -80,7 +80,7 @@
   }
   
   article p {
-    font-size: 0.9rem;
+    font-size: calc(1.2vw + .3rem);
     margin: 1.8rem;
   }
   /*

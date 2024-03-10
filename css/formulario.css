@@ -1,15 +1,37 @@
 form{
     width: 70%;
     height: fit-content;
-    margin: 2rem auto;
+    margin:  auto;
+    margin-top: 3rem;
+    
 }
+#cuerp{
+    background-color: #1f52c5;
+    padding-bottom: 3rem;
+}
+
 fieldset{
-    padding: 1rem 10%;
+    padding: 0rem 10%;
+    
+    align-items: center;
+    color: black;
+    border-color: #FFF;
 }
 fieldset>div, fieldset>p{
     margin-top: 1rem ;
 }
-
+input, textarea{
+    background-color: #24303c;
+    outline-width: 0;
+    inline-size: none;
+    border: none;
+}
+form input{
+    color: white;
+}
+input:focus{
+    border: 3px solid #FFF;
+}
 [type="reset"]{
     display: block;
 }
@@ -33,11 +55,19 @@ fieldset>div, fieldset>p{
     width: 80%;
 }
 
-@media screen and (max-width: 600px) {
+.botones{
+    padding: 1rem;
+    display: inline-block;
+}
+
+@media screen and (max-width: 1035px) {
     .flex_form{
         flex-direction: column;
         align-items: center;
+        display: flex;
+        flex-direction: column;
     }
+    
     form *{
         text-align: center;
         

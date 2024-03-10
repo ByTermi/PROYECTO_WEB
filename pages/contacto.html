@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Localización</title>
+    <title>Contacto</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/formulario.css">
     <meta name="author" content="Jaime Novillo"/>
@@ -30,43 +30,48 @@
         </nav>
     </header>
 
-    <main>
+    <main id="cuerp">
         <h2>Contacto</h2>
         <form action="mailto:pruebajesus@proton.me" method="post">
             <fieldset>
-                <legend>Formulario de contacto</legend>
+                <h3>Formulario de contacto</h3>
                 <div class="flex_form">
                     <div>
-                        <p>Nombre</p>
+                        <label for="nombre">Nombre</label>
                         <input required type="text" name="nombre" id="nombre">
                     </div>
                     <div>
-                        <p>Apellidos</p>
+                        <label for="apellidos">Apellidos</label>
                         <input required type="text" name="apellidos" id="apellidos">
                     </div>
                 </div>
+                
                 <div class="flex_form">
                     <div>
-                        <p>Empresa</p>
+                        <label for="empresa">Empresa</label>
                         <input type="text" name="empresa" id="empresa">
                     </div>
                     <div>
-                        <p>Telefono</p>
-                        <input type="tel" required name="teledono" id="Telefono">
+                        <label for="Telefono">Teléfono</label>
+                        <input type="tel" required name="telefono" id="Telefono">
                     </div>
                 </div>
+                
                 <div id="url">
-                    <p>URL de la web</p>
-                    <input type="url" placeholder="http://ejemplo.es" name="urlWeb" id="url">
+                    <label for="urlWeb">URL de la web</label>
+                    <input type="url" placeholder="http://ejemplo.es" name="urlWeb" id="urlWeb">
                 </div>
-            
+                
                 <p>Asunto</p>
                 <input type="text" name="asunto" id="asunto">
                 <p>Descripción</p>
                 <textarea required name="descripcion" id="descripcion"></textarea>
-                <input type="reset" value="Borrar formulario">
-                <input type="submit" value="Enviar">
-                <input type="checkbox" required name="consent" id="consent">
+                <br>
+                <input type="reset" class="botones" value="Borrar formulario">
+                
+                <input type="submit" class="botones" value="Enviar"><br>
+                <input type="checkbox" required name="consent" id="consent">Acepto los terminos de privacidad
+                
             </fieldset>
         </form>
         

@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transportes Y Hormigones Carnicero</title>
     <link rel="stylesheet" href="./css/index.css">
-    <meta name="author" content="Jaime Novillo"/>
+    <meta name="author" content="Jaime Novillo">
     <meta name="description" content="Transportes Y Hormigones Carnicero es una empresa de hormigones con servicios de transporte de materiales de construcción y fabricancion y distribución de hormigón">
     <link rel="shortcut icon" href="./images/Logo_Transportes_y_Hormigones_Carnicero.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="./scripts/arch.js" defer async></script>
+    <script src="./scripts/arch.js" defer></script>
 </head>
 <body>
     <header>
@@ -34,13 +34,13 @@
             <p>Transportes y Hormigones Carnicero es una empresa familiar dedicada al transporte de materiales de construcción desde 1991, principalmente suministro de áridos a plantas de hormigón. Así como a la fabricación en central de hormigones y morteros y suministro a todo tipos de obras tanto publicas como privadas.</p>
             <p>La calidad del producto suministrado y la flexibilidad del servicio que demanda el mercado, son los aspectos que mejor definen el trabajo que se realiza en Transportes y Hormigones Carnicero día a día.</p>
         </article>
-        <article>
+        <article id="centCert">
             <h2>Certificaciones de Transportes Y Hormigones Carnicero</h2>
-            <figure onclick="">
+            <figure id="cert" onclick="abrirArchivo()">
                 <img id="logoB" src="./images/Logo-bureau-veritas.webp" alt="Logo Bureau Veritas">
                 <figcaption>
                     <p>Bureau Veritas</p>
-                    <p onclick="abrirArchivo()">Abrir archivo</p>
+                    <p>Abrir archivo</p>
                 </figcaption>
             </figure>
         </article>
@@ -57,7 +57,7 @@
                         </figcaption>
                     </figure>
                 </article>
-                <article class="card_cont">
+                <article class="card_cont" onclick="redirigir('./pages/contacto.html')">
                     <h3>Formulario de contacto</h3>
                     <img src="./images/form.svg" class="svgs" alt="Formulario">
                 </article>

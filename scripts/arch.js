@@ -1,3 +1,4 @@
+'use strict';
 let fondo = document.getElementById('fondoPdf').style;
 let objeto = document.getElementById('objectPdf').style;
 let documento = document.getElementsByTagName('body');
@@ -13,4 +14,8 @@ function abrirArchivo(){
         window.scrollTo(0, 0);
         document.documentElement.style.overflow = 'hidden';
     }
+}
+
+function redirigir(texto){
+    window.location.href = texto;
 }
