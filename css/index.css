@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 100;
+    src: url('https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_dJE3gnD-w.ttf') format('truetype');
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -55,7 +62,7 @@ article:nth-child(1) p{
     margin: 1.8rem;
     text-align: justify;
 }
-p, a, footer *{
+p, label, a, footer *{
     font-size: calc(1.2vw + .5rem);
 }
 h2{
@@ -265,6 +272,11 @@ address *{
         width: 60%;
     }
 }
+@media screen and (max-width: 800px){
+    menu{
+        flex-direction: column;
+    }
+}
 @media screen and (max-width: 600px) {
     
     .flex{
@@ -278,9 +290,7 @@ address *{
     iframe{
         width: 80%;
     }
-    menu{
-        flex-direction: column;
-    }
+    
 }
 
 @media screen and (max-width: 260px){

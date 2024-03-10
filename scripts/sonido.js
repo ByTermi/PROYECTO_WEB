@@ -53,8 +53,6 @@ elementos.forEach((elemento) => {
         if (timeElapsed >= cooldownTime) {
             reproducirSonido();
             lastActionTime = now; // Actualizar el tiempo de la última acción
-        } else {
-            console.log(`Espera un poco antes de volver a hacer clic (${(cooldownTime - timeElapsed) / 1000} segundos restantes).`);
         }
     });
 });

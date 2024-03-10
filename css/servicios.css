@@ -1,3 +1,9 @@
+#fondoS{
+  background-image: url('../images/camion_carnicero.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 /* Estilos generales para las tarjetas */
 .boxesContainer {
     display: flex;
@@ -70,7 +76,7 @@
   display: none;
 }
 .front, .back{
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 }
 
   /* Estilos para los contenidos dentro de las caras */

@@ -18,7 +18,7 @@ fieldset{
     border-color: #FFF;
 }
 fieldset>div, fieldset>p{
-    margin-top: 1rem ;
+    margin-top: 3rem ;
 }
 input, textarea{
     background-color: #24303c;
@@ -27,6 +27,7 @@ input, textarea{
     border: none;
 }
 form input{
+    height: 2rem;
     color: white;
 }
 input:focus{
@@ -58,6 +59,14 @@ input:focus{
 .botones{
     padding: 1rem;
     display: inline-block;
+    margin: 1rem;
+    text-align: center;
+}
+@media screen and (max-width: 320px) {
+    [type="text"], [type="tel"]{
+        display: block;
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 1035px) {
