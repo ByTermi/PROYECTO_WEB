@@ -83,13 +83,13 @@
     font-size: 0.9rem;
     margin: 1.8rem;
   }
-  
+  /*
   a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
   }
-  
+  */
   @media screen and (max-width: 800px){
     .boxesContainer{
       flex-direction: column;
