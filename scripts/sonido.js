@@ -33,7 +33,7 @@ elemento.addEventListener('mouseover', () => {
 });*/
 // Variables globales
 let lastActionTime = new Date();
-const cooldownTime = 500; // Tiempo de cooldown en milisegundos (0.5 segundos)
+const cooldownTime = 500; // Tiempo de cooldown en milisegundos (Medio segundo)
 
 // Función para reproducir el sonido
 function reproducirSonido() {
@@ -47,8 +47,8 @@ const elementos = document.querySelectorAll('.cardBox');
 // Asignar la función al evento "mouseover" de cada elemento
 elementos.forEach((elemento) => {
     elemento.addEventListener('mouseover', () => {
-        const now = new Date();
-        const timeElapsed = now - lastActionTime;
+        let now = new Date();
+        let timeElapsed = now - lastActionTime;
 
         if (timeElapsed >= cooldownTime) {
             reproducirSonido();
