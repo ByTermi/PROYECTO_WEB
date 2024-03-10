@@ -2,12 +2,18 @@
 .boxesContainer {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .tituloTar{
+    font-size: calc(1vw + 0.7rem);
   }
   
   .cardBox {
     width: 30%;
     height: 200px;
     perspective: 1000px;
+    margin: 1.6rem;
+    
   }
   
   .card {
@@ -15,24 +21,30 @@
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 0.5s;
+    
+  }
+
+  .front, .back{
+    border-radius: 30px;
   }
   
   /* Cara frontal de la tarjeta */
   .front {
-    background-color: #f0f0f0;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: absolute;
     width: 100%;
+    min-height: fit-content;
     height: 100%;
     backface-visibility: hidden;
   }
   
   /* Cara trasera de la tarjeta */
   .back {
-    background-color: #e0e0e0;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,21 +55,33 @@
     backface-visibility: hidden;
     transform: rotateY(180deg);
   }
-  
+  .back>ul>li{
+    text-align: left;
+  }
   /* Efecto de giro al pasar el cursor */
   .card:hover {
     transform: rotateY(180deg);
   }
-  
+  /* Oculta la clase "back" cuando no se hace hover sobre la clase "cardBox" */
+.cardBox:not(:hover) .back{
+  display: none;
+}
+.cardBox:hover .front{
+  display: none;
+}
+.front, .back{
+  backdrop-filter: blur(10px);
+}
+
   /* Estilos para los contenidos dentro de las caras */
   h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
   }
   
-  p {
+  article p {
     font-size: 0.9rem;
-    margin-bottom: 20px;
+    margin: 1.8rem;
   }
   
   a {
@@ -66,3 +90,14 @@
     font-weight: bold;
   }
   
+  @media screen and (max-width: 800px){
+    .boxesContainer{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cardBox{
+      width: 80%;
+    }
+  }
+ 

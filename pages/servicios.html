@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Localización</title>
+    <title>Servicios</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/servicios.css">
     <meta name="description" content="Transportes Y Hormigones Carnicero es una empresa de hormigones con servicios de transporte de materiales de construcción y fabricancion y distribución de hormigón">
     <link rel="shortcut icon" href="../images/Logo_Transportes_y_Hormigones_Carnicero.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+    <script src="../scripts/girarTarjetas.js" defer></script>
 </head>
 <body>
     <header>
@@ -29,61 +29,84 @@
         </nav>
     </header>
 
-    <main>
+    <main id="cuerpo">
         <h2>Servicios de Transportes y Hormigones Carnicero</h2>
         <div class="boxesContainer">
-            <div class="cardBox">
+            <article class="cardBox">
               <div class="card">
                 <div class="front">
                   <!-- Contenido de la cara frontal de la primera tarjeta -->
-                  <h3>Servicio 1</h3>
-                  <img src="" alt="">
+                  <h3 class="tituloTar">Fabricación y distribución de hormigón</h3>
                   <p>Leer más</p>
                 </div>
                 <div class="back">
                   <!-- Contenido de la cara trasera de la primera tarjeta -->
-                  <h3>Lado Trasero Uno</h3>
-                  <p>Contenido en la primera tarjeta</p>
-                  <a href="#">Botón 1</a>
+                  <p>Fabricación de todo tipo de hormigón para satisfacer todas la necesidades en obra, cumpliendo con todas las características requeridas por el RD-1247/2008 (EHE-08).</p>
                 </div>
               </div>
-            </div>
+            </article>
+          
+            <article class="cardBox">
+              <div class="card">
+                <div class="front">
+                  <!-- Contenido de la cara frontal de la primera tarjeta -->
+                  <h3 class="tituloTar">Tipos de hormigón</h3>
+                  <p>Leer más</p>
+                </div>
+                <div class="back">
+                  <!-- Contenido de la cara trasera de la primera tarjeta -->
+                  <ul>
+                    <li>Hormigón armado</li>
+                    <li>Hormigón por dosificación</li>
+                    <li>Hormigón prensado</li>
+                    <li>Hormigón no estructural</li>
+                    <li>Hormigón en masa</li>
+                    <li>Hormigón de Limpieza</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="cardBox">
+              <div class="card">
+                <div class="front">
+                  <!-- Contenido de la cara frontal de la primera tarjeta -->
+                  <h3 class="tituloTar">Tipos de morteros</h3>
+                  <p>Leer más</p>
+                </div>
+                <div class="back">
+                  <!-- Contenido de la cara trasera de la primera tarjeta -->
+                  <p>Todo tipo de morteros satisfaciendo todas las necesidades en obra</p>
+                  <ul>
+                    <li>M5</li>
+                    <li>M7.5</li>
+                    <li>M.10</li>
+                    <li>Autonivelantes</li>
+                    <li>Para gunitados de piscina</li>
+                    <li>Hormigón de Limpieza</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
             <!-- Repite el mismo patrón para las otras dos tarjetas -->
             <!-- ... -->
-            <div class="cardBox">
+            <article class="cardBox">
                 <div class="card">
                   <div class="front">
                     <!-- Contenido de la cara frontal de la primera tarjeta -->
-                    <h3>Servicio 2</h3>
-                    <img src="" alt="">
+                    <h3 class="tituloTar">Transporte de materiales de construcción</h3>
+
                     <p>Leer más</p>
                   </div>
                   <div class="back">
                     <!-- Contenido de la cara trasera de la primera tarjeta -->
-                    <h3>Lado Trasero Uno</h3>
-                    <p>Contenido en la primera tarjeta</p>
-                    <a href="#">Botón 1</a>
+                    <p>Transporte tanto a granel como paletizado, especializados en materiales de construcción</p>
                   </div>
                 </div>
-              </div>
-              <div class="cardBox">
-                <div class="card">
-                  <div class="front">
-                    <!-- Contenido de la cara frontal de la primera tarjeta -->
-                    <h3>Servicio 3</h3>
-                    <img src="" alt="">
-                    <p>Leer más</p>
-                  </div>
-                  <div class="back">
-                    <!-- Contenido de la cara trasera de la primera tarjeta -->
-                    <h3>Lado Trasero Uno</h3>
-                    <p>Contenido en la primera tarjeta</p>
-                    <a href="#">Botón 1</a>
-                  </div>
-                </div>
-              </div>
+              
+            </article>
           </div>
-          
     </main>
 
     <footer class="flex">
