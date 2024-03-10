@@ -51,15 +51,18 @@
                     </div>
                     <div>
                         <p>Telefono</p>
-                        <input type="tel" name="teledono" id="Telefono">
+                        <input type="tel" required name="teledono" id="Telefono">
                     </div>
                 </div>
-                <p>URL de la web</p>
-                <input type="url" placeholder="http://ejemplo.es" name="urlWeb" id="url">
+                <div id="url">
+                    <p>URL de la web</p>
+                    <input type="url" placeholder="http://ejemplo.es" name="urlWeb" id="url">
+                </div>
+            
                 <p>Asunto</p>
                 <input type="text" name="asunto" id="asunto">
                 <p>Descripción</p>
-                <textarea required name="descripcion" id="descripcion" cols="50" rows="10"></textarea>
+                <textarea required name="descripcion" id="descripcion"></textarea>
                 <input type="reset" value="Borrar formulario">
                 <input type="submit" value="Enviar">
                 <input type="checkbox" required name="consent" id="consent">

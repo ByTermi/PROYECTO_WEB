@@ -4,10 +4,10 @@ form{
     margin: 2rem auto;
 }
 fieldset{
-    padding: 2rem 10%;
+    padding: 1rem 10%;
 }
 fieldset>div, fieldset>p{
-    margin: 1rem 0;
+    margin-top: 1rem ;
 }
 
 [type="reset"]{
@@ -15,14 +15,37 @@ fieldset>div, fieldset>p{
 }
 .flex_form{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 80%;
 }
 .flex_form>div{
     display: inline-block;
 }
-
-
+#descripcion{
+    width: 80%;
+}
+#url{
+    display: flex;
+    flex-direction: column;
+}
 [type="url"]{
     display: block;
     width: 80%;
+}
+
+@media screen and (max-width: 600px) {
+    .flex_form{
+        flex-direction: column;
+        align-items: center;
+    }
+    form *{
+        text-align: center;
+        
+    }
+    .flex_form>div:nth-child(2){
+        margin-top: 1rem;
+    }
+    #url{
+        align-items: center;
+    }
 }

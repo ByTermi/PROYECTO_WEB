@@ -8,7 +8,7 @@
     <meta name="description" content="Transportes Y Hormigones Carnicero es una empresa de hormigones con servicios de transporte de materiales de construcción y fabricancion y distribución de hormigón">
     <link rel="shortcut icon" href="./images/Logo_Transportes_y_Hormigones_Carnicero.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <script src="./scripts/arch.js" defer></script>
 </head>
 <body>
     <header>
@@ -35,11 +35,11 @@
         </article>
         <article>
             <h2>Certificaciones de Transportes Y Hormigones Carnicero</h2>
-            <figure>
+            <figure onclick="">
                 <img id="logoB" src="./images/Logo-bureau-veritas.webp" alt="Logo Bureau Veritas">
                 <figcaption>
                     <p>Bureau Veritas</p>
-                    <p>Abrir archivo</p>
+                    <p onclick="abrirArchivo()">Abrir archivo</p>
                 </figcaption>
             </figure>
         </article>
@@ -87,8 +87,12 @@
             <a href="tel:+34678514198">+34 678514198</a>
         </address>
     </footer>
-    <!--<div id="fondoPdf">
+    <div id="fondoPdf">
+        <p onclick="abrirArchivo()">Cerrar</p>
     </div>
-    <object type="application/pdf" id="objectPdf" data="./public/ES136329ENACS.pdf"></object>-->
+    <div id="objectPdf">
+        <object type="application/pdf" data="./public/ES136329ENACS.pdf"></object>
+    </div>
+    
 </body>
 </html>
