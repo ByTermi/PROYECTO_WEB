@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="../images/Logo_Transportes_y_Hormigones_Carnicero.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="../scripts/form.js" defer async></script>
+    <script src="../scripts/arch.js" defer async></script>
 </head>
 <body>
     <header>
@@ -71,10 +72,18 @@
                 <input type="reset" class="botones" value="Borrar formulario">
                 
                 <input type="submit" class="botones" value="Enviar"><br>
-                <input type="checkbox" required name="consent" id="consent"><label for="consent">Acepto los terminos de privacidad</label>
-                
+                <input type="checkbox" required name="consent" id="consent"><label for="consent">Acepto los <span id="terminos">terminos de privacidad</span> (hacer click en la plabra términos para abrirlos)</label>
             </fieldset>
         </form>
+        <div id="divDebajoForm">
+            <a id="botonCorreo" href="mailto:pruebajesus@proton.me"><button>Abrir cliente de correo con destinatario fijado</button></a>
+            <p>Esta última opción abre el cliente de correo teniendo de destinatario el correo de la empresa, para poder poner el contenido deseado sin depender de la plantilla</p>
+        </div>
+        <div id="fondoPdf">
+            <p onclick="abrirArchivo()">Cerrar</p>
+        </div>
+        <div id="objectPdf">
+            <object type="application/pdf" data="./public/ES136329ENACS.pdf"></object>
         
     </main>
 
@@ -92,6 +101,5 @@
             <a href="tel:+34678514198">+34 678514198</a>
         </address>
     </footer>
-    
 </body>
 </html>

@@ -74,6 +74,7 @@ h3{
 h1,h2,h3{
     display: block;
     text-align: center;
+    width: 100%;
 }
 nav, menu{
     width: 100%;

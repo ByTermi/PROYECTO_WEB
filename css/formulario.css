@@ -12,7 +12,8 @@ form{
 
 fieldset{
     padding: 0rem 10%;
-    
+    display: flex;
+    flex-direction: column;
     align-items: center;
     color: black;
     border-color: #FFF;
@@ -20,7 +21,7 @@ fieldset{
 fieldset>div, fieldset>p{
     margin-top: 3rem ;
 }
-input, textarea{
+input, textarea, button{
     background-color: #24303c;
     outline-width: 0;
     inline-size: none;
@@ -64,6 +65,40 @@ label:nth-of-type(1), label:nth-of-type(2){
     margin: 1rem;
     text-align: center;
 }
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#divDebajoForm{
+    width: 65%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 14px;
+}
+#divDebajoForm *{
+    text-align: justify;
+    margin: .5rem;
+}
+#botonCorreo{
+    box-shadow: 4px 4px black;
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+#botonCorreo:active{
+    margin-left: 4px;
+    margin-top: 4px;
+    box-shadow: 0px 0px;
+    
+}
+
+#terminos{
+    color: black;
+    text-decoration: underline;
+}
 @media screen and (max-width: 320px) {
     [type="text"], [type="tel"]{
         display: block;
@@ -72,6 +107,9 @@ label:nth-of-type(1), label:nth-of-type(2){
 }
 
 @media screen and (max-width: 1035px) {
+    div.flex_form div{
+        width: 80%;
+    }
     .flex_form{
         flex-direction: column;
         align-items: center;
@@ -88,5 +126,8 @@ label:nth-of-type(1), label:nth-of-type(2){
     }
     #url{
         align-items: center;
+    }
+    input{
+        width: 70%;
     }
 }
